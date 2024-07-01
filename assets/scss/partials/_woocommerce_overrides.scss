@@ -1,0 +1,40 @@
+@import 'variables';
+
+.woocommerce span.onsale {
+    background-color:  $special-color;
+}
+
+.woocommerce ul.products li.product .button {
+    background-color: #3c3b3b;
+    color: white;
+}
+
+.woocommerce-loop-product__title {
+    color: #3c3b3b;
+}
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) ul.products li.product .price {
+    color:#2ecc71;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+    a {
+        color:#3c3b3b;
+    }
+}
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price, .woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product span.price {
+    color: $secondary-color;
+}
+
+nav.woocommerce-MyAccount-navigation ul li a {
+    color: $primary-color;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,13 @@
+@import 'partials/variables';
+
+button.single_add_to_cart_button.button.alt {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+input#submit.submit {
+    background-color: $primary-color;
+}
